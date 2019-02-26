@@ -7,14 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22A6960B93A453DBDC2252A6 /* Pods_SketchParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED9D86345149C22BF082A6AC /* Pods_SketchParser.framework */; };
+		79026B00221A16990051CFD1 /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026AFF221A16980051CFD1 /* Data+Compression.swift */; };
+		7910E6F42210E0F200F29199 /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E6F32210E0F200F29199 /* Rect.swift */; };
+		7910E6F62210E1F900F29199 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E6F52210E1F900F29199 /* Page.swift */; };
+		7910E6F82210E2E600F29199 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E6F72210E2E600F29199 /* Text.swift */; };
+		7910E6FA2210E30D00F29199 /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E6F92210E30D00F29199 /* Bitmap.swift */; };
+		7910E6FD2210E39A00F29199 /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E6FC2210E39A00F29199 /* Slice.swift */; };
+		7910E6FF2210E3D600F29199 /* LayerElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E6FE2210E3D600F29199 /* LayerElement.swift */; };
+		7910E7012210E41100F29199 /* LayerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E7002210E41100F29199 /* LayerObject.swift */; };
+		7910E7032210E43E00F29199 /* AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910E7022210E43E00F29199 /* AttributedString.swift */; };
+		791611352222E72500BCE0A5 /* PageRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791611342222E72500BCE0A5 /* PageRef.swift */; };
+		7926A27422234FB40009E540 /* SketchFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7926A27322234FB40009E540 /* SketchFileModel.swift */; };
+		7989D7022223127C00B997E6 /* SketchShapePathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989D7012223127C00B997E6 /* SketchShapePathView.swift */; };
+		7989D7042223145000B997E6 /* SketchShapePathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989D7032223145000B997E6 /* SketchShapePathViewModel.swift */; };
+		7989D70622231DF900B997E6 /* SketchCurvePointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989D70522231DF900B997E6 /* SketchCurvePointViewModel.swift */; };
+		79A741C5221A42F80050740B /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741C4221A42F80050740B /* Archive.swift */; };
+		79A741C7221A43030050740B /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741C6221A43030050740B /* Entry.swift */; };
+		79A741CE221A44DD0050740B /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741CD221A44DD0050740B /* Data+Serialization.swift */; };
+		79A741D0221A452C0050740B /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741CF221A452C0050740B /* FileManager+ZIP.swift */; };
+		79A741D4221A46080050740B /* ZIPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741D3221A46080050740B /* ZIPFoundation.swift */; };
+		79A741D7221A4D4A0050740B /* FileHandle+RandomAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741D6221A4D4A0050740B /* FileHandle+RandomAccess.swift */; };
+		79A741D9221A4D8D0050740B /* Archive+Decompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741D8221A4D8D0050740B /* Archive+Decompression.swift */; };
+		79A741DB221A4DC20050740B /* Entry+CompressionAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A741DA221A4DC20050740B /* Entry+CompressionAlgorithm.swift */; };
+		79AE3D8A2213C19100224B8B /* ShapePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AE3D892213C19100224B8B /* ShapePath.swift */; };
 		79AFF683220F91B2003490A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFF682220F91B2003490A2 /* AppDelegate.swift */; };
 		79AFF685220F91B2003490A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFF684220F91B2003490A2 /* ViewController.swift */; };
 		79AFF688220F91B2003490A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AFF686220F91B2003490A2 /* Main.storyboard */; };
 		79AFF68A220F91B3003490A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79AFF689220F91B3003490A2 /* Assets.xcassets */; };
 		79AFF68D220F91B3003490A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79AFF68B220F91B3003490A2 /* LaunchScreen.storyboard */; };
+		79AFF697220F9F11003490A2 /* SketchDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AFF696220F9F11003490A2 /* SketchDocument.swift */; };
+		79C154C02222083B00010BC1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C154BF2222083B00010BC1 /* Style.swift */; };
+		79CB69B62220215200934985 /* StringAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69B52220215200934985 /* StringAttribute.swift */; };
+		79CB69B82220217500934985 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69B72220217500934985 /* Attribute.swift */; };
+		79CB69BA2220219600934985 /* FontDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69B92220219600934985 /* FontDescriptor.swift */; };
+		79CB69BC222021D500934985 /* FontDescriptorAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69BB222021D500934985 /* FontDescriptorAttributes.swift */; };
+		79CB69BE2220220700934985 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69BD2220220700934985 /* Color.swift */; };
+		79CB69C02220226000934985 /* UIFont+Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69BF2220226000934985 /* UIFont+Weight.swift */; };
+		79CB69C2222022BA00934985 /* ParagraphStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69C1222022BA00934985 /* ParagraphStyle.swift */; };
+		79CB69C5222024E800934985 /* CurvePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69C4222024E800934985 /* CurvePoint.swift */; };
+		79CB69C82220298300934985 /* SketchBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69C72220298300934985 /* SketchBookModel.swift */; };
+		79CB69CA22202D1100934985 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69C922202D1100934985 /* Array.swift */; };
+		79CB69CD222032DE00934985 /* SketchPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69CC222032DE00934985 /* SketchPageModel.swift */; };
+		79CB69CF222171BE00934985 /* SketchPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69CE222171BE00934985 /* SketchPageView.swift */; };
+		79CB69D12221744D00934985 /* SketchPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CB69D02221744D00934985 /* SketchPageViewModel.swift */; };
+		79D4B474221051A700357BA2 /* KeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4B473221051A700357BA2 /* KeyedDecodingContainer.swift */; };
+		79FAADEC221B904B0073D94D /* TestSketch.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 79FAADEB221B904B0073D94D /* TestSketch.sketch */; };
+		79FAADEE221B90660073D94D /* Artboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FAADED221B90660073D94D /* Artboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63E84A5D90B9F6B6F34FCD20 /* Pods-SketchParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SketchParser.debug.xcconfig"; path = "Target Support Files/Pods-SketchParser/Pods-SketchParser.debug.xcconfig"; sourceTree = "<group>"; };
+		79026AFF221A16980051CFD1 /* Data+Compression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Compression.swift"; sourceTree = "<group>"; };
+		7910E6F32210E0F200F29199 /* Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
+		7910E6F52210E1F900F29199 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		7910E6F72210E2E600F29199 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		7910E6F92210E30D00F29199 /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		7910E6FC2210E39A00F29199 /* Slice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
+		7910E6FE2210E3D600F29199 /* LayerElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerElement.swift; sourceTree = "<group>"; };
+		7910E7002210E41100F29199 /* LayerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerObject.swift; sourceTree = "<group>"; };
+		7910E7022210E43E00F29199 /* AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedString.swift; sourceTree = "<group>"; };
+		791611342222E72500BCE0A5 /* PageRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageRef.swift; sourceTree = "<group>"; };
+		7926A27322234FB40009E540 /* SketchFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchFileModel.swift; sourceTree = "<group>"; };
+		7989D7012223127C00B997E6 /* SketchShapePathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchShapePathView.swift; sourceTree = "<group>"; };
+		7989D7032223145000B997E6 /* SketchShapePathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchShapePathViewModel.swift; sourceTree = "<group>"; };
+		7989D70522231DF900B997E6 /* SketchCurvePointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchCurvePointViewModel.swift; sourceTree = "<group>"; };
+		79A741C4221A42F80050740B /* Archive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		79A741C6221A43030050740B /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		79A741CD221A44DD0050740B /* Data+Serialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Serialization.swift"; sourceTree = "<group>"; };
+		79A741CF221A452C0050740B /* FileManager+ZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		79A741D3221A46080050740B /* ZIPFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZIPFoundation.swift; sourceTree = "<group>"; };
+		79A741D6221A4D4A0050740B /* FileHandle+RandomAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileHandle+RandomAccess.swift"; sourceTree = "<group>"; };
+		79A741D8221A4D8D0050740B /* Archive+Decompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Archive+Decompression.swift"; sourceTree = "<group>"; };
+		79A741DA221A4DC20050740B /* Entry+CompressionAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CompressionAlgorithm.swift"; sourceTree = "<group>"; };
+		79AE3D892213C19100224B8B /* ShapePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapePath.swift; sourceTree = "<group>"; };
 		79AFF67F220F91B2003490A2 /* SketchParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79AFF682220F91B2003490A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79AFF684220F91B2003490A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +88,26 @@
 		79AFF689220F91B3003490A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79AFF68C220F91B3003490A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79AFF68E220F91B3003490A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79AFF696220F9F11003490A2 /* SketchDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchDocument.swift; sourceTree = "<group>"; };
+		79C154BF2222083B00010BC1 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		79CB69B52220215200934985 /* StringAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAttribute.swift; sourceTree = "<group>"; };
+		79CB69B72220217500934985 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		79CB69B92220219600934985 /* FontDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDescriptor.swift; sourceTree = "<group>"; };
+		79CB69BB222021D500934985 /* FontDescriptorAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDescriptorAttributes.swift; sourceTree = "<group>"; };
+		79CB69BD2220220700934985 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		79CB69BF2220226000934985 /* UIFont+Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Weight.swift"; sourceTree = "<group>"; };
+		79CB69C1222022BA00934985 /* ParagraphStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParagraphStyle.swift; sourceTree = "<group>"; };
+		79CB69C4222024E800934985 /* CurvePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvePoint.swift; sourceTree = "<group>"; };
+		79CB69C72220298300934985 /* SketchBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchBookModel.swift; sourceTree = "<group>"; };
+		79CB69C922202D1100934985 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		79CB69CC222032DE00934985 /* SketchPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPageModel.swift; sourceTree = "<group>"; };
+		79CB69CE222171BE00934985 /* SketchPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPageView.swift; sourceTree = "<group>"; };
+		79CB69D02221744D00934985 /* SketchPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPageViewModel.swift; sourceTree = "<group>"; };
+		79D4B473221051A700357BA2 /* KeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		79FAADEB221B904B0073D94D /* TestSketch.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestSketch.sketch; sourceTree = "<group>"; };
+		79FAADED221B90660073D94D /* Artboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artboard.swift; sourceTree = "<group>"; };
+		A69CBB312AE7E75840CCEB46 /* Pods-SketchParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SketchParser.release.xcconfig"; path = "Target Support Files/Pods-SketchParser/Pods-SketchParser.release.xcconfig"; sourceTree = "<group>"; };
+		ED9D86345149C22BF082A6AC /* Pods_SketchParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SketchParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +115,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A6960B93A453DBDC2252A6 /* Pods_SketchParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F412F12799AFB6E4F66C0AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED9D86345149C22BF082A6AC /* Pods_SketchParser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7910E6F12210E04900F29199 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79D4B473221051A700357BA2 /* KeyedDecodingContainer.swift */,
+				79A741D6221A4D4A0050740B /* FileHandle+RandomAccess.swift */,
+				79CB69BF2220226000934985 /* UIFont+Weight.swift */,
+				79CB69C922202D1100934985 /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7910E6F22210E08E00F29199 /* Sketch Parser */ = {
+			isa = PBXGroup;
+			children = (
+				79AFF696220F9F11003490A2 /* SketchDocument.swift */,
+				791611342222E72500BCE0A5 /* PageRef.swift */,
+				7910E6F52210E1F900F29199 /* Page.swift */,
+				7910E6FB2210E38100F29199 /* Layer Elements */,
+				7910E6F32210E0F200F29199 /* Rect.swift */,
+				79CB69BD2220220700934985 /* Color.swift */,
+			);
+			path = "Sketch Parser";
+			sourceTree = "<group>";
+		};
+		7910E6FB2210E38100F29199 /* Layer Elements */ = {
+			isa = PBXGroup;
+			children = (
+				7910E7002210E41100F29199 /* LayerObject.swift */,
+				7910E6FE2210E3D600F29199 /* LayerElement.swift */,
+				79FAADED221B90660073D94D /* Artboard.swift */,
+				7910E6FC2210E39A00F29199 /* Slice.swift */,
+				79CB69C32220230000934985 /* Text */,
+				7910E6F92210E30D00F29199 /* Bitmap.swift */,
+				79CB69C62220252F00934985 /* Shape Path */,
+				79C154BF2222083B00010BC1 /* Style.swift */,
+			);
+			path = "Layer Elements";
+			sourceTree = "<group>";
+		};
+		7926A275222354AC0009E540 /* Sketch Book */ = {
+			isa = PBXGroup;
+			children = (
+				79CB69C72220298300934985 /* SketchBookModel.swift */,
+				79CB69CC222032DE00934985 /* SketchPageModel.swift */,
+				79CB69D02221744D00934985 /* SketchPageViewModel.swift */,
+				79CB69CE222171BE00934985 /* SketchPageView.swift */,
+			);
+			path = "Sketch Book";
+			sourceTree = "<group>";
+		};
+		79A741C8221A431C0050740B /* ZIPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				79A741D3221A46080050740B /* ZIPFoundation.swift */,
+				79A741C4221A42F80050740B /* Archive.swift */,
+				79A741C6221A43030050740B /* Entry.swift */,
+				79A741CD221A44DD0050740B /* Data+Serialization.swift */,
+				79A741CF221A452C0050740B /* FileManager+ZIP.swift */,
+			);
+			path = ZIPFoundation;
+			sourceTree = "<group>";
+		};
+		79A741D5221A49A30050740B /* Unzip */ = {
+			isa = PBXGroup;
+			children = (
+				79026AFF221A16980051CFD1 /* Data+Compression.swift */,
+				79A741D8221A4D8D0050740B /* Archive+Decompression.swift */,
+				79A741DA221A4DC20050740B /* Entry+CompressionAlgorithm.swift */,
+				79A741C8221A431C0050740B /* ZIPFoundation */,
+			);
+			path = Unzip;
+			sourceTree = "<group>";
+		};
 		79AFF676220F91B2003490A2 = {
 			isa = PBXGroup;
 			children = (
 				79AFF681220F91B2003490A2 /* SketchParser */,
 				79AFF680220F91B2003490A2 /* Products */,
+				E8CD7B9F315955032E8A3245 /* Pods */,
+				1F412F12799AFB6E4F66C0AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +226,61 @@
 			children = (
 				79AFF682220F91B2003490A2 /* AppDelegate.swift */,
 				79AFF684220F91B2003490A2 /* ViewController.swift */,
-				79AFF686220F91B2003490A2 /* Main.storyboard */,
+				7926A275222354AC0009E540 /* Sketch Book */,
+				79CB69CB2220321E00934985 /* SketchParser */,
 				79AFF689220F91B3003490A2 /* Assets.xcassets */,
+				79AFF686220F91B2003490A2 /* Main.storyboard */,
 				79AFF68B220F91B3003490A2 /* LaunchScreen.storyboard */,
 				79AFF68E220F91B3003490A2 /* Info.plist */,
+				79FAADEB221B904B0073D94D /* TestSketch.sketch */,
 			);
 			path = SketchParser;
+			sourceTree = "<group>";
+		};
+		79CB69C32220230000934985 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				7910E6F72210E2E600F29199 /* Text.swift */,
+				7910E7022210E43E00F29199 /* AttributedString.swift */,
+				79CB69B52220215200934985 /* StringAttribute.swift */,
+				79CB69B72220217500934985 /* Attribute.swift */,
+				79CB69B92220219600934985 /* FontDescriptor.swift */,
+				79CB69BB222021D500934985 /* FontDescriptorAttributes.swift */,
+				79CB69C1222022BA00934985 /* ParagraphStyle.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		79CB69C62220252F00934985 /* Shape Path */ = {
+			isa = PBXGroup;
+			children = (
+				79AE3D892213C19100224B8B /* ShapePath.swift */,
+				79CB69C4222024E800934985 /* CurvePoint.swift */,
+			);
+			path = "Shape Path";
+			sourceTree = "<group>";
+		};
+		79CB69CB2220321E00934985 /* SketchParser */ = {
+			isa = PBXGroup;
+			children = (
+				7926A27322234FB40009E540 /* SketchFileModel.swift */,
+				7989D7012223127C00B997E6 /* SketchShapePathView.swift */,
+				7989D7032223145000B997E6 /* SketchShapePathViewModel.swift */,
+				7989D70522231DF900B997E6 /* SketchCurvePointViewModel.swift */,
+				7910E6F22210E08E00F29199 /* Sketch Parser */,
+				79A741D5221A49A30050740B /* Unzip */,
+				7910E6F12210E04900F29199 /* Extensions */,
+			);
+			path = SketchParser;
+			sourceTree = "<group>";
+		};
+		E8CD7B9F315955032E8A3245 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63E84A5D90B9F6B6F34FCD20 /* Pods-SketchParser.debug.xcconfig */,
+				A69CBB312AE7E75840CCEB46 /* Pods-SketchParser.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +290,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79AFF691220F91B3003490A2 /* Build configuration list for PBXNativeTarget "SketchParser" */;
 			buildPhases = (
+				441A6D693F63B19824D2B5CB /* [CP] Check Pods Manifest.lock */,
 				79AFF67B220F91B2003490A2 /* Sources */,
 				79AFF67C220F91B2003490A2 /* Frameworks */,
 				79AFF67D220F91B2003490A2 /* Resources */,
@@ -125,18 +345,84 @@
 				79AFF68D220F91B3003490A2 /* LaunchScreen.storyboard in Resources */,
 				79AFF68A220F91B3003490A2 /* Assets.xcassets in Resources */,
 				79AFF688220F91B2003490A2 /* Main.storyboard in Resources */,
+				79FAADEC221B904B0073D94D /* TestSketch.sketch in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		441A6D693F63B19824D2B5CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SketchParser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79AFF67B220F91B2003490A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79FAADEE221B90660073D94D /* Artboard.swift in Sources */,
+				7910E6FD2210E39A00F29199 /* Slice.swift in Sources */,
+				79A741C5221A42F80050740B /* Archive.swift in Sources */,
+				79CB69B82220217500934985 /* Attribute.swift in Sources */,
+				79CB69BC222021D500934985 /* FontDescriptorAttributes.swift in Sources */,
+				7910E6F42210E0F200F29199 /* Rect.swift in Sources */,
+				7910E6F82210E2E600F29199 /* Text.swift in Sources */,
+				79CB69CF222171BE00934985 /* SketchPageView.swift in Sources */,
+				79A741CE221A44DD0050740B /* Data+Serialization.swift in Sources */,
+				79CB69C02220226000934985 /* UIFont+Weight.swift in Sources */,
+				79AE3D8A2213C19100224B8B /* ShapePath.swift in Sources */,
+				7910E7012210E41100F29199 /* LayerObject.swift in Sources */,
+				79A741C7221A43030050740B /* Entry.swift in Sources */,
+				79A741D4221A46080050740B /* ZIPFoundation.swift in Sources */,
+				79CB69D12221744D00934985 /* SketchPageViewModel.swift in Sources */,
+				7989D70622231DF900B997E6 /* SketchCurvePointViewModel.swift in Sources */,
+				79AFF697220F9F11003490A2 /* SketchDocument.swift in Sources */,
+				79D4B474221051A700357BA2 /* KeyedDecodingContainer.swift in Sources */,
+				79CB69CA22202D1100934985 /* Array.swift in Sources */,
+				79CB69B62220215200934985 /* StringAttribute.swift in Sources */,
+				79026B00221A16990051CFD1 /* Data+Compression.swift in Sources */,
+				79A741D7221A4D4A0050740B /* FileHandle+RandomAccess.swift in Sources */,
+				7910E6FF2210E3D600F29199 /* LayerElement.swift in Sources */,
+				79A741D9221A4D8D0050740B /* Archive+Decompression.swift in Sources */,
+				7989D7022223127C00B997E6 /* SketchShapePathView.swift in Sources */,
+				7910E6F62210E1F900F29199 /* Page.swift in Sources */,
+				79CB69C5222024E800934985 /* CurvePoint.swift in Sources */,
+				7926A27422234FB40009E540 /* SketchFileModel.swift in Sources */,
+				79CB69C2222022BA00934985 /* ParagraphStyle.swift in Sources */,
+				79CB69C82220298300934985 /* SketchBookModel.swift in Sources */,
+				7989D7042223145000B997E6 /* SketchShapePathViewModel.swift in Sources */,
 				79AFF685220F91B2003490A2 /* ViewController.swift in Sources */,
+				791611352222E72500BCE0A5 /* PageRef.swift in Sources */,
+				79CB69CD222032DE00934985 /* SketchPageModel.swift in Sources */,
+				79C154C02222083B00010BC1 /* Style.swift in Sources */,
+				79CB69BE2220220700934985 /* Color.swift in Sources */,
+				7910E6FA2210E30D00F29199 /* Bitmap.swift in Sources */,
 				79AFF683220F91B2003490A2 /* AppDelegate.swift in Sources */,
+				7910E7032210E43E00F29199 /* AttributedString.swift in Sources */,
+				79CB69BA2220219600934985 /* FontDescriptor.swift in Sources */,
+				79A741D0221A452C0050740B /* FileManager+ZIP.swift in Sources */,
+				79A741DB221A4DC20050740B /* Entry+CompressionAlgorithm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +566,7 @@
 		};
 		79AFF692220F91B3003490A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63E84A5D90B9F6B6F34FCD20 /* Pods-SketchParser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +585,7 @@
 		};
 		79AFF693220F91B3003490A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69CBB312AE7E75840CCEB46 /* Pods-SketchParser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
