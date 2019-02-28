@@ -6,10 +6,12 @@
 //  Copyright © 2019 Ayal Spitz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class LayerElement: Decodable {
     let frame: Rect
+    
+    public var size: CGSize { return frame.cgRect.size }
     
     private enum CodingKeys: CodingKey {
         case frame
