@@ -20,6 +20,10 @@ public class Bitmap: LayerElement {
         self.image = try container.decode(Image.self, forKey: .image)
         try super.init(from: decoder)
     }
+    
+    public var imageReference: String {
+        return image.ref
+    }
 }
 
 struct Image: Codable {

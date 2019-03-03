@@ -11,6 +11,7 @@ import UIKit
 public class LayerElement: Decodable {
     let frame: Rect
     
+    public var rect: CGRect { return frame.cgRect }
     public var size: CGSize { return frame.cgRect.size }
     
     private enum CodingKeys: CodingKey {

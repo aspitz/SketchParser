@@ -20,4 +20,8 @@ public class Text: LayerElement {
         self.attributedString = try container.decode(AttributedString.self, forKey: .attributedString)
         try super.init(from: decoder)
     }
+    
+    public var nsAttributedString: NSAttributedString {
+        return attributedString.nsAttributedString
+    }
 }

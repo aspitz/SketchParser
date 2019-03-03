@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ayal Spitz. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public struct SketchFileModel {
     public let archive: Archive
@@ -45,5 +45,13 @@ public struct SketchFileModel {
     
     public func imageData(named imageName: String) -> Data? {
         return archive.decompress(entryName: imageName)
+    }
+    
+    public func get(bitmap: Bitmap) -> UIImage? {
+        if let data = archive.decompress(entryName: bitmap.image.ref) {
+            return UIImage(data: data)
+        } else {
+            return nil
+        }
     }
 }

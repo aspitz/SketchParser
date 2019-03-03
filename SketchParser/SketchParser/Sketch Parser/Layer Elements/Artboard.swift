@@ -20,4 +20,8 @@ public class Artboard: LayerElement {
         layers = try container.decode([LayerElement].self, ofFamily: LayerObject.self, forKey: .layers)
         try super.init(from: decoder)
     }
+    
+    public func getAll<T>(_ type: T.Type) -> [T] {
+        return layers.flatten(type)
+    }
 }
