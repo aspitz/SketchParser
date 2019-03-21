@@ -68,7 +68,9 @@ extension Data {
 
         withUnsafeBytes{ (fromBytes) -> Void in
             toData.withUnsafeMutableBytes{ (toBytes) -> Void in
-                bytesWriten = transform.function(toBytes, toSize, fromBytes, fromSize, nil, compressionAlgorithm)
+                if let fromByesPtr = fromBytes.bindMemory(to: UInt8.self).baseAddress, let toBytesPtr = toBytes.bindMemory(to: UInt8.self).baseAddress {
+                    bytesWriten = transform.function(toBytesPtr, toSize, fromByesPtr, fromSize, nil, compressionAlgorithm)
+                }
             }
         }
         
