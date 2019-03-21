@@ -61,24 +61,25 @@ extension Data {
         guard algorithm != .none else { return Data(self) }
         
         let compressionAlgorithm = algorithm.compression_algorithm!
-        let bufferSize = dstSize ?? count
-        var dstData = Data(count: bufferSize)
+        let fromSize = count
+        let toSize = dstSize ?? count
+        var toData = Data(count: toSize)
         var bytesWriten = 0
-        
+
         withUnsafeBytes{ (fromBytes) -> Void in
-            dstData.withUnsafeMutableBytes{ (toBytes) -> Void in
-                bytesWriten = transform.function(toBytes, bufferSize, fromBytes, bufferSize, nil, compressionAlgorithm)
+            toData.withUnsafeMutableBytes{ (toBytes) -> Void in
+                bytesWriten = transform.function(toBytes, toSize, fromBytes, fromSize, nil, compressionAlgorithm)
             }
         }
         
         if bytesWriten == 0 {
             return nil
         } else {
-            let delta = dstData.count - bytesWriten
+            let delta = toData.count - bytesWriten
             if  delta > 0 {
-                dstData.removeLast(delta)
+                toData.removeLast(delta)
             }
-            return dstData
+            return toData
         }
     }
 }
