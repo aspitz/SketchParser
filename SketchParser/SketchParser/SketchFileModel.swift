@@ -12,6 +12,7 @@ public struct SketchFileModel {
     public let archive: Archive
     public let document: SketchDocument
 
+    public let title: String
     public let pageCount: Int
     
     public init?(resourceName: String) {
@@ -20,6 +21,10 @@ public struct SketchFileModel {
     }
     
     public init?(pathURL: URL) {
+        let lastComponent = pathURL.lastPathComponent
+        let titleSize = lastComponent.count - (pathURL.pathExtension.count + 1)
+        title = String(lastComponent.prefix(titleSize))
+        
         if let archive = Archive(url: pathURL, accessMode: .read),
             let documentData = archive.decompress(entryName: "document.json"),
             let document = try? JSONDecoder().decode(SketchDocument.self, from: documentData) {
