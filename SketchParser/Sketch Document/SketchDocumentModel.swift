@@ -1,5 +1,5 @@
 //
-//  SketchBookModel.swift
+//  SketchDocumentModel.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/22/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct SketchBookModel {
+public struct SketchDocumentModel {
     private let sketchFile: SketchFileModel
     private let sketchArtboards: [Artboard]
     

@@ -9,7 +9,7 @@
 import Foundation
 
 public struct SketchPageModel {
-    private let bookModel: SketchBookModel
+    private let bookModel: SketchDocumentModel
     private let number: Int
     private let sketchArtboard: Artboard
 
@@ -18,7 +18,7 @@ public struct SketchPageModel {
     public let bitmaps: [Bitmap]
     public let shapePaths: [ShapePath]
     
-    init(pageNumber: Int, artboard: Artboard, from bookModel: SketchBookModel) {
+    init(pageNumber: Int, artboard: Artboard, from bookModel: SketchDocumentModel) {
         self.bookModel = bookModel
         number = pageNumber
         sketchArtboard = artboard
