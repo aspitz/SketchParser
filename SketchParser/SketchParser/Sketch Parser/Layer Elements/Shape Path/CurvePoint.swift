@@ -24,19 +24,6 @@ struct CurvePoint: Decodable {
     }
     
     static func toPoint(_ point: String) -> CGPoint {
-        let pattern = #"[0-9]+\.?[0-9]*"#
-        do {
-            let regex = try NSRegularExpression(pattern: pattern)
-            let range = NSRange(point.startIndex..<point.endIndex, in: point)
-            let matches = regex.matches(in: point, range: range)
-            let foo: [Double] = matches.map {
-                let range = Range($0.range, in: point)
-                return Double( point[range!] )!
-            }
-            return CGPoint(x: foo[0], y: foo[1])
-        } catch let error {
-            print(error)
-        }
-        return CGPoint.zero
+        return NSCoder.cgPoint(for: point)
     }
 }

@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var bookModel: SketchBookModel?
+    var bookModel: SketchDocumentModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        bookModel = SketchBookModel(resourceName: "TestSketch")
+        bookModel = SketchDocumentModel(resourceName: "TestSketch")
         
         if let bookModel = bookModel {
             let pageModel = bookModel.page(number: 0)

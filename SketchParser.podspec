@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "12.0"
 
   s.source       = { :git => "https://bitbucket.org/aspitz/sketchparser.git", :tag => '0.0.1' }
-  s.source_files = "SketchParser/SketchParser/**/*.swift", "SketchParser/Sketch Book/**/*.swift"
+  s.source_files = "SketchParser/SketchParser/**/*.swift", "SketchParser/Sketch Document/**/*.swift"
 
   s.swift_version = '5.0'
 end

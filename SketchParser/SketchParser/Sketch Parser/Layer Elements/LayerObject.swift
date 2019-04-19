@@ -20,6 +20,7 @@ enum LayerObject: String, ClassFamily {
     case star = "star"
     case rectangle = "rectangle"
     case triangle = "triangle"
+    case polygon = "polygon"
 
     enum Discriminator: String, CodingKey {
         case clazz = "_class"
@@ -38,7 +39,7 @@ enum LayerObject: String, ClassFamily {
         case .bitmap:
             return Bitmap.self
 
-        case .shapePath, .oval, .star, .rectangle, .triangle:
+        case .shapePath, .oval, .star, .rectangle, .triangle, .polygon:
             return ShapePath.self
         }
     }
