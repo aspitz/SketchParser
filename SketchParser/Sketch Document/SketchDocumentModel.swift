@@ -9,18 +9,18 @@
 import Foundation
 
 public struct SketchDocumentModel {
-    private let sketchFile: SketchFileModel
+    private let sketchFile: FileModel
     private let sketchArtboards: [Artboard]
     
     public init?(resourceName: String) {
-        self.init(sketchFile: SketchFileModel(resourceName: resourceName))
+        self.init(sketchFile: FileModel(resourceName: resourceName))
     }
     
     public init?(pathURL: URL) {
-        self.init(sketchFile: SketchFileModel(pathURL: pathURL))
+        self.init(sketchFile: FileModel(pathURL: pathURL))
     }
     
-    private init?(sketchFile: SketchFileModel?) {
+    private init?(sketchFile: FileModel?) {
         guard let sketchFile = sketchFile else { return nil }
         
         self.sketchFile = sketchFile
@@ -32,13 +32,13 @@ public struct SketchDocumentModel {
     }
     
     
-    public var pageCount: Int {
+    public var artboardCount: Int {
         return sketchArtboards.count
     }
 
-    public func page(number: Int) -> SketchPageModel {
-        let artboard = sketchArtboards[number]
-        return SketchPageModel(pageNumber: number, artboard: artboard, from: self)
+    public func artboard(index: Int) -> ArtboardModel {
+        let artboard = sketchArtboards[index]
+        return ArtboardModel(artboardIndex: index, artboard: artboard, from: self)
     }
     
     func imageData(named imageName: String) -> Data? {

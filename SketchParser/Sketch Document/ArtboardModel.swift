@@ -1,5 +1,5 @@
 //
-//  SketchPageModel.swift
+//  ArtboardModel.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/22/19.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-public struct SketchPageModel {
-    private let bookModel: SketchDocumentModel
-    private let number: Int
+public struct ArtboardModel {
+    private let documentModel: SketchDocumentModel
+    private let index: Int
     private let sketchArtboard: Artboard
 
     public let frame: Rect
@@ -18,9 +18,9 @@ public struct SketchPageModel {
     public let bitmaps: [Bitmap]
     public let shapePaths: [ShapePath]
     
-    init(pageNumber: Int, artboard: Artboard, from bookModel: SketchDocumentModel) {
-        self.bookModel = bookModel
-        number = pageNumber
+    init(artboardIndex: Int, artboard: Artboard, from documentModel: SketchDocumentModel) {
+        self.documentModel = documentModel
+        index = artboardIndex
         sketchArtboard = artboard
         
         frame = sketchArtboard.frame
@@ -31,6 +31,6 @@ public struct SketchPageModel {
     }
 
     public func imageData(named imageName: String) -> Data? {
-        return bookModel.imageData(named: imageName)
+        return documentModel.imageData(named: imageName)
     }
 }

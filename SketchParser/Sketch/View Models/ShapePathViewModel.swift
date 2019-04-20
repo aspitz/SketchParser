@@ -1,5 +1,5 @@
 //
-//  SketchShapePathViewModel.swift
+//  ShapePathViewModel.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/24/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct SketchShapePathViewModel {
+struct ShapePathViewModel {
     let frame: CGRect
     let bezierPath: UIBezierPath
     let strokeColor: UIColor?
@@ -25,7 +25,7 @@ struct SketchShapePathViewModel {
         var points = model.points
         if model.isClosed { points.append(points[0]) }
         
-        let pointViewModels = points.map { SketchCurvePointViewModel(curvePoint: $0, size: size, offset: offset) }
+        let pointViewModels = points.map { CurvePointViewModel(curvePoint: $0, size: size, offset: offset) }
         
         for index in 0..<points.count {
             let currentPt = pointViewModels[index]

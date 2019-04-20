@@ -1,5 +1,5 @@
 //
-//  SketchPageView.swift
+//  ArtboardView.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/23/19.
@@ -8,22 +8,22 @@
 
 import UIKit
 
-public class SketchPageView: UIView {
-    let pageViewModel: SketchPageViewModel
+public class ArtboardView: UIView {
+    let viewModel: ArtboardViewModel
     
-    init(pageViewModel: SketchPageViewModel) {
-        self.pageViewModel = pageViewModel
-        super.init(frame: pageViewModel.frame)
+    init(viewModel: ArtboardViewModel) {
+        self.viewModel = viewModel
+        super.init(frame: viewModel.frame)
 
-        renderPageViewModel()
+        renderViewModel()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func renderPageViewModel() {
-        pageViewModel.texts
+    func renderViewModel() {
+        viewModel.texts
             .map {
                 let label = UILabel(frame: $0.frame.cgRect)
                 label.attributedText = $0.attributedString.nsAttributedString
@@ -33,17 +33,17 @@ public class SketchPageView: UIView {
                 addSubview($0)
             }
         
-        pageViewModel.bitmaps
+        viewModel.bitmaps
             .forEach {
                 let imageView = UIImageView(frame: $0.frame.cgRect)
                 
                 addSubview(imageView)
-                if let data = pageViewModel.imageData(named: $0.image.ref) {
+                if let data = viewModel.imageData(named: $0.image.ref) {
                     let anImage = UIImage(data: data)
                     imageView.image = anImage
                 }
             }
         
-        pageViewModel.shapePathViewModels.map{ SketchShapePathView(viewModel: $0) }.forEach { addSubview($0) }
+        viewModel.shapePathViewModels.map{ ShapePathView(viewModel: $0) }.forEach { addSubview($0) }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  SketchShapePathView.swift
+//  ShapePathView.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/24/19.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class SketchShapePathView: UIView {
-    let viewModel: SketchShapePathViewModel
+class ShapePathView: UIView {
+    let viewModel: ShapePathViewModel
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(viewModel: SketchShapePathViewModel) {
+    init(viewModel: ShapePathViewModel) {
         self.viewModel = viewModel
         super.init(frame: viewModel.frame)
         backgroundColor = .clear

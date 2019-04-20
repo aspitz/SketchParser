@@ -9,19 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var bookModel: SketchDocumentModel?
+    var documentModel: SketchDocumentModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        bookModel = SketchDocumentModel(resourceName: "TestSketch")
+        documentModel = SketchDocumentModel(resourceName: "TestSketch")
         
-        if let bookModel = bookModel {
-            let pageModel = bookModel.page(number: 0)
-            let pageViewModel = SketchPageViewModel(pageModel: pageModel)
-            let pageView = SketchPageView(pageViewModel: pageViewModel)
-            view.addSubview(pageView)
+        if let documentModel = documentModel {
+            let artboardModel = documentModel.artboard(index: 0)
+            let artboardViewModel = ArtboardViewModel(model: artboardModel)
+            let artboardView = ArtboardView(viewModel: artboardViewModel)
+            view.addSubview(artboardView)
         }
     }
 }

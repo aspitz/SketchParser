@@ -1,5 +1,5 @@
 //
-//  LayerObject.swift
+//  LayerFamily.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/10/19.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum LayerObject: String, ClassFamily {
+enum LayerFamily: String, ClassFamily {
     case text = "text"
     case artboard = "artboard"
     case slice = "slice"

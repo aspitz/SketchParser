@@ -1,5 +1,5 @@
 //
-//  SketchCurvePointViewModel.swift
+//  CurvePointViewModel.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/24/19.
@@ -8,21 +8,21 @@
 
 import UIKit
 
-struct SketchCurvePointViewModel {
+struct CurvePointViewModel {
     let point: CGPoint
     let curveFrom: CGPoint?
     let curveTo: CGPoint?
     
     init(curvePoint: CurvePoint, size: CGSize, offset: CGFloat) {
-        point = SketchCurvePointViewModel.convert(pt: curvePoint.point, size: size, offset: offset)
+        point = CurvePointViewModel.convert(pt: curvePoint.point, size: size, offset: offset)
         if curvePoint.hasCurveFrom {
-            curveFrom = SketchCurvePointViewModel.convert(pt: curvePoint.curveFrom, size: size, offset: offset)
+            curveFrom = CurvePointViewModel.convert(pt: curvePoint.curveFrom, size: size, offset: offset)
         } else {
             curveFrom = nil
         }
         
         if curvePoint.hasCurveTo {
-            curveTo = SketchCurvePointViewModel.convert(pt: curvePoint.curveTo, size: size, offset: offset)
+            curveTo = CurvePointViewModel.convert(pt: curvePoint.curveTo, size: size, offset: offset)
         } else {
             curveTo = nil
         }

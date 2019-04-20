@@ -1,5 +1,5 @@
 //
-//  SketchDocument.swift
+//  Document.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/9/19.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-public struct SketchDocument: Decodable{
+public struct Document: Decodable{
     let pages: [PageRef]
 }

@@ -17,7 +17,7 @@ public class Artboard: LayerElement {
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        layers = try container.decode([LayerElement].self, ofFamily: LayerObject.self, forKey: .layers)
+        layers = try container.decode([LayerElement].self, ofFamily: LayerFamily.self, forKey: .layers)
         try super.init(from: decoder)
     }
     

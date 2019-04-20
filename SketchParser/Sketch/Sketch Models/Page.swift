@@ -17,7 +17,7 @@ public struct Page: Decodable {
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        layers = try container.decode([LayerElement].self, ofFamily: LayerObject.self, forKey: .layers)
+        layers = try container.decode([LayerElement].self, ofFamily: LayerFamily.self, forKey: .layers)
     }
     
     public func filteredLayers <T>(_ type: T.Type) -> [T] {

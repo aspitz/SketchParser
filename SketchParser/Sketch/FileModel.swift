@@ -1,5 +1,5 @@
 //
-//  SketchFileModel.swift
+//  FileModel.swift
 //  SketchParser
 //
 //  Created by Ayal Spitz on 2/24/19.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-public struct SketchFileModel {
+public struct FileModel {
     public let archive: Archive
-    public let document: SketchDocument
+    public let document: Document
 
     public let title: String
     public let pageCount: Int
@@ -27,7 +27,7 @@ public struct SketchFileModel {
         
         if let archive = Archive(url: pathURL, accessMode: .read),
             let documentData = archive.decompress(entryName: "document.json"),
-            let document = try? JSONDecoder().decode(SketchDocument.self, from: documentData) {
+            let document = try? JSONDecoder().decode(Document.self, from: documentData) {
             
             self.archive = archive
             self.document = document
